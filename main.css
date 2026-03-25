@@ -28,7 +28,7 @@ body{
 /* الصورة */
 .product img{
     width:100%;
-    max-width:400px;
+    max-width:500px;
     height:450px;
     object-fit:cover;
     border-radius:12px;

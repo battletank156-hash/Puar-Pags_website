@@ -53,9 +53,26 @@ img:hover{
 
  
  img{
-    width: 450px;;
+    width: 500px;;
     
     object-fit:cover;
     border-radius:12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /
+}
+
+@media (max-width: 768px){
+    .product-header{
+        grid-template-columns: 1fr;
+    }
+}
+img{
+
+max-width: 100%;
+
+height: auto;
+
+
+
+
+
 }

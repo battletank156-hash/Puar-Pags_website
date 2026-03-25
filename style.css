@@ -77,3 +77,9 @@ body{
 .contact-btn:hover{
     background:#162d63;
 }
+
+@media (max-width: 768px){
+    .product-header{
+        grid-template-columns: 1fr;
+    }
+}
