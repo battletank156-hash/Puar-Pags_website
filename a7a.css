@@ -1,76 +1,70 @@
-body{
-    margin:0;
-    font-family:'Cairo', sans-serif;
-    background:#02131a;
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
 }
 
-/* الأزرار فوق */
-.nav{
-    position:absolute;
-    top:20px;
-    left:30px;
+/* الناف بار */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
 }
 
-.nav a{
-    color:white;
-    text-decoration:none;
-    background:#1f3c88;
-    padding:10px 18px;
-    margin-right:10px;
-    border-radius:8px;
-    transition:0.3s;
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.nav a:hover{
-    background:#162d63;
+.nav a:hover {
+  color: #00ffcc;
 }
 
-/* قسم التواصل */
-.contact{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:50px;
+/* الكونتكت */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px;
 }
 
-/* عنصر التواصل */
-.item{
-    text-align:center;
-    color:white;
-    text-decoration:none; /* مهم لأن العنصر a */
+/* كل عنصر (بقى لينك) */
+.item {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.3s;
+
+  text-decoration: none; /* مهم */
+  color: white; /* مهم */
+  display: block; /* مهم */
 }
 
 /* الأيقونات */
-.item i{
-    font-size:35px;
-    background:#1f3c88;
-
-    width:70px;
-    height:70px;
-
-    line-height:70px;
-    border-radius:50%;
-
-    display:block;
-    margin:auto;
-
-    transition:0.3s;
+.item i {
+  font-size: 35px;
+  margin-bottom: 10px;
+  transition: 0.3s;
 }
 
-/* تأثير عند المرور */
-.item i:hover{
-    background:#162d63;
-    transform:scale(1.1);
+/* النص */
+.item p {
+  margin: 0;
+  font-size: 16px;
 }
 
-.item p{
-    margin-top:10px;
-    color:white;
+/* تأثير hover 🔥 */
+.item:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(0,255,204,0.2);
 }
 
-@media (max-width: 768px){
-    .product-header{
-        grid-template-columns: 1fr;
-    }
+.item:hover i {
+  color: #00ffcc;
 }
