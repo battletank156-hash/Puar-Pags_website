@@ -101,6 +101,6 @@ body {
 /* موبايل */
 @media (max-width: 600px) {
   .item {
-    padding: 20px;
+    padding: 21px;
   }
 }

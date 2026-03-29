@@ -114,6 +114,6 @@ h1 {
 /* موبايل */
 @media (max-width: 600px) {
   h1 {
-    font-size: 26px;
+    font-size: 25px;
   }
 }
